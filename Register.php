@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>ASMS Car - Register</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
+  <style>
+    body, html {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      font-family: 'Poppins', sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: #f0f0f0;
+    }
+
+    .background-image {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: url('path/to/your/background-image.jpg') no-repeat center center/cover;
+      z-index: -1;
+    }
+
+    .wrapper {
+      background: rgba(128, 0, 128, 0.9);
+      padding: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      max-width: 400px;
+      width: 100%;
+    }
+
+    .wrapper h1 {
+      text-align: center;
+      margin-bottom: 1.5rem;
+      color: #fff;
+    }
+
+    .input-box {
+      position: relative;
+      margin-bottom: 1.5rem;
+    }
+
+    .input-box input {
+      width: 100%;
+      padding: 10px 40px 10px 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      box-sizing: border-box;
+    }
+
+    .input-box i {
+      position: absolute;
+      top: 50%;
+      right: 10px;
+      transform: translateY(-50%);
+      color: #aaa;
+    }
+
+    .btn {
+      display: block;
+      width: 100%;
+      padding: 10px;
+      background-color: #4b0082;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      text-align: center;
+      font-size: 1rem;
+    }
+
+    .btn:hover {
+      background-color: #370057;
+    }
+
+    .login-link {
+      text-align: center;
+      margin-top: 1rem;
+    }
+
+    .login-link p {
+      margin: 0;
+      color: #fff;
+    }
+
+    .login-link a {
+      color: #ffccff;
+      text-decoration: none;
+    }
+
+    .login-link a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <div class="background-image"></div>
+
+  <section class="wrapper">
+    <form action="register_handler.php" method="POST">
+      <h1>Register</h1>
+      <div class="input-box">
+        <input type="text" name="user_name" placeholder="User Name" required>
+        <i class="bx bxs-user"></i>
+      </div>
+      <div class="input-box">
+        <input type="email" name="email" placeholder="Email" required>
+        <i class="bx bxs-envelope"></i>
+      </div>
+      <div class="input-box">
+        <input type="text" name="full_name" placeholder="Full Name" required>
+        <i class="bx bxs-user-detail"></i>
+      </div>
+      <div class="input-box">
+        <input type="number" name="age" placeholder="Age" required>
+        <i class="bx bxs-calendar"></i>
+      </div>
+      <div class="input-box">
+        <input type="text" name="phone_number" placeholder="Phone Number" required>
+        <i class="bx bxs-phone"></i>
+      </div>
+      <div class="input-box">
+        <input type="password" name="password" placeholder="Password" required>
+        <i class="bx bxs-lock-alt"></i>
+      </div>
+      <button type="submit" class="btn">Register</button>
+      <div class="login-link">
+        <p>Already have an account? <a href="login.html">Login</a></p>
+      </div>
+    </form>
+  </section>
+</body>
+</html>
